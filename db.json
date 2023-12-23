@@ -1,0 +1,16 @@
+{
+  "posts": [],
+  "signup": [
+    {
+      "name": "N",
+      "email": "user@user.com",
+      "mobile": 8080537856,
+      "password": "8ed46d8",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,26 @@
+
+
+
+
+<div class="container">
+
+  <div class="card">
+    <h3 class="text-warning m-3"> 
+      Login Form </h3> 
+      <form class="" [formGroup]="loginform"(ngSubmit)="login()">
+
+        <label for="exampleInputEmail1" class="form-label"><b>Email address</b></label>
+        <input type="email" formControlName="email"  class="form-control"placeholder="enter email id" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small *ngIf="loginform.get('email')?.invalid && loginform.get('email')?.touched"class="text-danger">Email is required</small>
+    
+         
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"><b>Password</b></label>
+      <input type="password"  formControlName="password" class="form-control"placeholder="enter password" id="exampleInputPassword1">
+      <small *ngIf="loginform.get('password')?.invalid && loginform.get('password')?.touched"class="text-danger">password is Required</small>
+    </div>
+    <button type="submit"[disabled]="loginform.invalid" class="btn btn-primary">Login</button>
+      <h6 class="text-info"> Email= user@user.com<br>Password=8ed46d8</h6>
+  </form>
+  </div>
+</div>
